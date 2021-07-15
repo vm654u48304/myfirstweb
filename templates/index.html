@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}臭雞的歡樂天堂{% endblock %}
+{% block headmessage %} Hello, {{name}}{% endblock %}
+{% block main %}
+<hr>
+  特別號：{{sspe}}<br>
+  樂透號碼：{{lots}}<br>
+  {% autoescape off %}
+  {{ plot_div }}
+  {% endautoescape %}
+
+{% endblock %}
